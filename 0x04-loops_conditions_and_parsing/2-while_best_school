@@ -6,5 +6,5 @@ n_cont= 0
 while [ $n_cont -lt 10 ]
 do
 	echo "Best School"
-	((num++))
+	((n_cont++))
 done
