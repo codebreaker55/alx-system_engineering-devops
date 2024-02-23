@@ -9,5 +9,5 @@ pid=$(pgrep "bash ./4-to_infinity_and_beyond" -f)
 
 if [ -n "$pid" ];
 then
-	kill -ls "$pid"
+	kill "$pid"
 fi
