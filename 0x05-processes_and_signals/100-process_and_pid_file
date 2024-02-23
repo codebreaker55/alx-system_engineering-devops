@@ -13,7 +13,7 @@ clean_up() {
 
 # signal handling
 trap 'echo "Y U no love me?!"' SIGINT
-trap 'echo "I hate the kill"' SIGTERM
+trap 'echo "I hate the kill" && clean_up' SIGTERM
 trap "clean_up" SIGQUIT
 
 # main script
