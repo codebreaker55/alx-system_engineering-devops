@@ -36,7 +36,6 @@ int main(void)
 		if (zom_pid > 0)
 		{
 			printf("Zombie process created, PID: %d\n", zom_pid);
-			sleep(1);
 		}
 		else
 		{
