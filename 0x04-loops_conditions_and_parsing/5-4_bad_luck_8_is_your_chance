@@ -8,10 +8,10 @@ n_cont=0
 
 while [ $n_cont -lt 10 ]
 do
-	if [ $n_cont -eq 4 ]
+	if [ $n_cont -eq 3 ]
 	then
 		echo "bad luck"
-	elif [ $n_cont -eq 8 ]
+	elif [ $n_cont -eq 7 ]
 	then
 		echo "good luck"
 	else
