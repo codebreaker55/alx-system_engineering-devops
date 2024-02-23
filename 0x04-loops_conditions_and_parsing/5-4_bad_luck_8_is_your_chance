@@ -16,6 +16,7 @@ do
 		echo "good luck"
 	else
 		echo "Best School"
-	((n_cont ++))
 	fi
+	((n_cont ++))
+	
 done
