@@ -8,6 +8,6 @@
 con_list=$(ls -p | grep -v "/")
 
 for i in $con_list; do
-	list_name=$(echo "$i" | cut -d '-' -f 2-)
+	list_name=$(echo "$i" | cut -d '-' -f2)
 	echo "$list_name"
 done
