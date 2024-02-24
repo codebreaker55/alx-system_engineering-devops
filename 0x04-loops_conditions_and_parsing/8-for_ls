@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 # a Bash script that displays:
-	# The content of the current directory In a list format
-	# Where only the part of the name after the first dash is displayed
+#	The content of the current directory In a list format
+#	Where only the part of the name after the first dash is displayed
 # You must use the for loop (while and until are forbidden)
 # Do not display hidden files
 
 con_list=$(ls -p | grep -v "/")
 
-for i in $con_list
-do
+for i in $con_list; do
 	list_name=$(echo "$i" | cut -d '-' -f 2-)
 	echo "$list_name"
 done
