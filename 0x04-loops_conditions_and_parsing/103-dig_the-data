@@ -4,4 +4,4 @@
 # The exact format : "OCCURENCE_NUMBER IP HTTP_CODE" In list format
 # Ordered from the greatest to the lowest number of occurrences using "awk"
 
-awk '{print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn | awk 'BEGIN{OFS=" "} {print $1, $2, $3}'
+awk '{print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn
