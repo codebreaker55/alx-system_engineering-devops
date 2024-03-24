@@ -1,8 +1,11 @@
 <<<<<<<0x09-web-infrastructure-design>>>>>>>
 
-###Project Overview
+###Project Overview###
+
 -this project is done by making whiteboarding to the web infrastructure design.
-###here is explanation to each part of the project.
+
+###here is explanation to each part of the project###
+
 0. Simple Web Stack
 Simplified Web Stack Overview
 This setup is a basic web system hosting a site accessible at www.foobar.com, lacking firewalls and SSL certificates for security. The server’s resources—CPU, RAM, SSD—are shared among its components, like the database and app server.
