@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 Project Overview
 0. Simple Web Stack
 Simplified Web Stack Overview
@@ -21,38 +22,38 @@ Infrastructure Challenges
 1. Distributed Web Infrastructure
 Key Details
 
-Load Balancing Algorithm: Utilizes HAProxy with a Round Robin algorithm to evenly distribute processing time.
-Load Balancer Setup: Implements an Active-Passive configuration through HAProxy.
-Primary-Replica Database Configuration: Features a Primary server for read/write operations and a Replica server primarily for read operations.
-Application Node Differences: The Primary node handles all write operations required by the website, while the Replica node assists by managing read requests.
+* Load Balancing Algorithm: Utilizes HAProxy with a Round Robin algorithm to evenly distribute processing time.
+* Load Balancer Setup: Implements an Active-Passive configuration through HAProxy.
+* Primary-Replica Database Configuration: Features a Primary server for read/write operations and a Replica server primarily for read operations.
+* Application Node Differences: The Primary node handles all write operations required by the website, while the Replica node assists by managing read requests.
 Infrastructure Challenges
 
-Single Points of Failure (SPOF): Several vulnerabilities exist, such as the Primary database server failure.
+* Single Points of Failure (SPOF): Several vulnerabilities exist, such as the Primary database server failure.
 Security Concerns: The absence of SSL certificates and firewalls poses risks of data interception and unauthorized access.
-Lack of Monitoring: Without a monitoring system, it's difficult to assess the health or status of each server.
+* Lack of Monitoring: Without a monitoring system, it's difficult to assess the health or status of each server.
 2. Secured and Monitored Web Infrastructure
 Overview
-This web infrastructure consists of three servers that are secured and monitored, facilitating encrypted traffic to enhance security and reliability.
+- This web infrastructure consists of three servers that are secured and monitored, facilitating encrypted traffic to enhance security and reliability.
 
 Key Components and Their Purposes
 
-Firewalls: Serve to protect the web servers from unauthorized access by filtering incoming traffic.
+* Firewalls: Serve to protect the web servers from unauthorized access by filtering incoming traffic.
 SSL Certificate: Used to encrypt data in transit between the web servers and the external network.
-Monitoring Clients: Deployed to continuously monitor the performance and health of the servers.
+* Monitoring Clients: Deployed to continuously monitor the performance and health of the servers.
 Identified Infrastructure Challenges
 
-SSL Termination at Load Balancer: Potential exposure of data to interception within the internal network.
-Single MySQL Server: Relying on a single MySQL server poses scalability challenges and introduces a single point of failure.
-Homogeneous Server Components: Resource contention and scalability issues due to identical components on all servers.
-Conclusion
+* SSL Termination at Load Balancer: Potential exposure of data to interception within the internal network.
+* Single MySQL Server: Relying on a single MySQL server poses scalability challenges and introduces a single point of failure.
+* Homogeneous Server Components: Resource contention and scalability issues due to identical components on all servers.
+- Conclusion
 While this infrastructure enhances security and reliability, it faces challenges regarding data encryption continuity, scalability, and performance optimization.
 
 3. Scale Up
-Description
+* Description
 This web infrastructure is a scaled-up version of the infrastructure described previously, addressing single points of failure and incorporating individual servers for major components.
 
-Specifics About This Infrastructure
+* Specifics About This Infrastructure
 The addition of a firewall between each server protects each server from unwanted and unauthorized users.
 
-Issues With This Infrastructure
-High maintenance costs associated with additional servers and increased electricity consumption.
+* Issues With This Infrastructure
+High maintenance costs associated with additional servers and increased electricity consumption
