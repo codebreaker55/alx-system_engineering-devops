@@ -1,10 +1,10 @@
-<<<<<<<0x09-web-infrastructure-design>>>>>>>
+# 0x09-web-infrastructure-design
 
-###Project Overview###
+## Project Overview
 
 -this project is done by making whiteboarding to the web infrastructure design.
 
-###here is explanation to each part of the project###
+## here is explanation to each part of the project
 
 0. Simple Web Stack
 Simplified Web Stack Overview
