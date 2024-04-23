@@ -2,4 +2,3 @@
 exec { 'pkill killmenow':
   path => '/urs/bin:/usr/sbin:/bin',
 }
-
