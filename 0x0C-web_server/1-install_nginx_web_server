@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#  installing nginx web server on remote server
+
+set -e  # exit immediately if any command fails
+
+# Update packages
+sudo apt-get -y update
+
+# install Nginx
+sudo apt-get -y install nginx
+
+# allowing incoming HTTP traffic
+sudo ufw allow 'Nginx HTTP'
+
+# return a page that contains the string Hello World!
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+
+# starting Nginx service
+sudo service nginx start
