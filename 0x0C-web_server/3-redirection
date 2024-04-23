@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+#  installing nginx web server on remote server
+
+# Update packages
+
+echo -e "Updating and installing Nginx.\n"
+sudo apt-get update -y -qq && \
+	 sudo apt-get install nginx -y
+
+echo -e "\nSetting up some minor stuff.\n"
+
+# start Nginx service
+sudo service nginx start
+
+# allowing incoming HTTP traffic
+sudo ufw allow 'Nginx HTTP'
+
+# give the user ownership to the website files for editing
+sudo chown -R "$USER":"$USER" /var/www/html
+sudo chmod -R 755 /var/www
+
+# backup default index
+cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bckp
+
+# return a page that contains the string 'Hello World!'
+echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html > /dev/null
+
+# Setting up /redirect_me to a youtube video
+sudo sed -i '24i\       rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+
+# restarting nginx
+sudo service nginx restart
