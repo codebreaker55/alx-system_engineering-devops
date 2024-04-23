@@ -2,16 +2,16 @@
 #  installing nginx web server on remote server
 
 # Update packages
-sudo apt-get -y update
+apt-get -y update
 
 # install Nginx
-sudo apt-get -y install nginx
+apt-get -y install nginx
 
 # allowing incoming HTTP traffic
-sudo ufw allow 'Nginx HTTP'
+ufw allow 'Nginx HTTP'
 
 # return a page that contains the string Hello World!
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
 
 # starting Nginx service
-sudo service nginx start
+service nginx start
