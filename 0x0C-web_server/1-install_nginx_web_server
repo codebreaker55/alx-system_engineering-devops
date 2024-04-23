@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 #  installing nginx web server on remote server
 
-set -e  # exit immediately if any command fails
-
 # Update packages
 sudo apt-get -y update
 
