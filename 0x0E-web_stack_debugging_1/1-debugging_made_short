@@ -2,4 +2,4 @@
 # Bash script that install Nginx in 5 or less lines long
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 service nginx start
-kill "$(pgrep 'nginx' | head -1)"
+service nginx status | grep -q "not running" && echo "Nginx is not running"
