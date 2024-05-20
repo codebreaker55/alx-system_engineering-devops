@@ -5,7 +5,6 @@ Python script to export data in the CSV format
 import csv
 import requests
 import sys
-import urllib3
 
 
 if __name__ == "__main__":
