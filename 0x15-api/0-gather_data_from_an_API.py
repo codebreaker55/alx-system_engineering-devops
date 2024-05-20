@@ -9,7 +9,7 @@ import requests
 import sys
 
 
-REST_API = " https://jsonplaceholder.typicode.com/ "
+REST_API = "https://jsonplaceholder.typicode.com"
 """the required RESET API URL"""
 
 
