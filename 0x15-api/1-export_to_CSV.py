@@ -13,7 +13,9 @@ if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/"
     user = requests.get(url + "users/{}".format(user_id), verify=False).json()
     user_name = user.get("username")
-    todos_req = requests.get(url + "todos", params={"userId": user_id}, verify=False).json()
+    todo_url = url + "todos"
+    do_params = {"userId": user_id}
+    todos_req = requests.get(todo_url, params=do_params, verify=False).json()
 
 # Write user's todo items to a CSV file with their user ID as the filename
     with open("{}.csv".format(user_id), "w", newline="") as csvfile:
