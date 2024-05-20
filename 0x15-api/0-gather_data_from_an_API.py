@@ -9,7 +9,7 @@ import requests
 import sys
 
 
-REST_API = "https://jsonplaceholder.typicode.com"
+REST_API = " https://jsonplaceholder.typicode.com "
 """the required RESET API URL"""
 
 
@@ -26,7 +26,7 @@ if __name__ == '__main__':
                 'Employee {} is done with tasks({}/{}):'.format(
                     emp_name,
                     len(done_tasks),
-                    len(tasks_num)
+                    len(tasks_no)
                 )
             )
             for task_done in done_tasks:
