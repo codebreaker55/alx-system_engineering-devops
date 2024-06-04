@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 a recursive function that queries the Reddit API,
-and returns a list containing the titles of all hot articles for a given subreddit
+returns a list containing the titles of all hot articles for a given subreddit
 """
 import requests
 
@@ -19,7 +19,7 @@ v1.0.0 (by /u/firdaus_cartoon_jr)"
         "limit": 100
     }
     resp = requests.get(url, headers=headers, params=params,
-                            allow_redirects=False)
+                        allow_redirects=False)
     if resp.status_code == 404:
         return None
 
@@ -28,6 +28,7 @@ v1.0.0 (by /u/firdaus_cartoon_jr)"
     count += res.get("dist")
     for ch in res.get("children"):
         hot_list.append(ch.get("data").get("title"))
+
     if after is not None:
         return recurse(subreddit, hot_list, after, count)
     return hot_list
