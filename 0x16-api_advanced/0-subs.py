@@ -22,4 +22,4 @@ def number_of_subscribers(subreddit):
         subs = data['data']['subscribers']
         return subs
     else:
-        return 0
+        return "OK"
