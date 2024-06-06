@@ -21,7 +21,5 @@ def number_of_subscribers(subreddit):
         data = resp.json()
         subs = data['data']['subscribers']
         return subs
-    elif resp.status_code == 404:
-        return 0
     else:
         return 0
