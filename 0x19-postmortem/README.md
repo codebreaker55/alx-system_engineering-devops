@@ -28,3 +28,5 @@ We are constantly stormed by a quantity of information, it’s tough to get peop
 **Make your post-mortem attractive by adding humour, a pretty diagram or anything that would catch your audience attention.**
 
 **Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.**
+
+the link of the postmortem:[https://www.linkedin.com/pulse/postmortem-website-outage-june-7-2024-belal-ismail-u6c7f]
