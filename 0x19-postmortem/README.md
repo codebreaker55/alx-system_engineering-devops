@@ -21,4 +21,10 @@
 **what are the things that can be improved/fixed (broadly speaking)**
 **a list of tasks to address the issue (be very specific, like a TODO, example: patch Nginx server, add monitoring on server memory…)**
 -Be brief and straight to the point, between 400 to 600 words
+ 
+### for the addvanced task:
+We are constantly stormed by a quantity of information, it’s tough to get people to read you.
 
+**Make your post-mortem attractive by adding humour, a pretty diagram or anything that would catch your audience attention.**
+
+**Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.**
